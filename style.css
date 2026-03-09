@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-black: #262626;
+    --main-white: #f9fafc;
+    --light-gray: #ebeef3;
+    --gray: #e1e8f0;
+    --dark-gray: #b8c2ce;
+}
+
+@font-face {
+    font-family: "Aclonica";
+    src: url(fonts/Aclonica/Aclonica-Regular.ttf);
+}
+
+@font-face {
+    font-family: "DMsans";
+    src: url(fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "sequalSans";
+    src: url(fonts/Sequel_Sans/SequelSansBlackBody.ttf);
+}
+
+body {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: DMsans;
+}
+
+/* ------------------------------------- Navbar ---------------------------------- */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo-cont a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: Aclonica;
+    font-weight: 100;
+    color: var(--main-black);
+}
+
+.links-cont {
+    display: flex;
+    gap: 2.5vw;
+    list-style: none;
+    width: max-content;
+}
+
+.links-cont a {
+    text-decoration: none;
+    color: var(--main-black);
+    font-family: DMsans;
+    font-weight: 600;
+    font-size: 0.9vw;
+}
+
+.nav-btn {
+    padding: 0.4vw 1vw;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--dark-gray);
+    display: flex;
+    gap: 0.5vw;
+}
+
+.nav-btn p {
+    color: var(--light-gray);
+}
+
+/* ------------------------------------- Navbar ---------------------------------- */
+
+/* ------------------------------------- Hero Part ---------------------------------- */
+
+.hero-cont {
+    display: flex;
+    justify-content: space-between;
+    height: 100dvh;
+    overflow: hidden;
+    gap: 10vw;
+    margin: 50px 0;
+
+    background-image: url(images/basketball-player-action-sunset\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: 42% 100%;
+}
+
+.hero-left {
+    position: relative;
+}
+
+.hero-left p {
+    font-family: sequalSans;
+    font-size: 5vw;
+    height: 25vw;
+    width: 35vw;
+    position: absolute;
+    top: 20%;
+    background: linear-gradient(to top, #e1e8f0, #b8c2ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+}
+
+.hero-center div {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.hero-center p {
+    width: 22vw;
+    font-weight: 600;
+}
+
+.hero-center button {
+    padding: 1vw 3vw;
+    width: fit-content;
+    border: 0;
+    background-color: var(--dark-gray);
+    border-radius: 0.4vw;
+}
+
+.hero-center button p {
+    width: fit-content;
+}
+
+.hero-right-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2vw;
+}
+
+.hero-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right-txt-cont {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    color: var(--main-black);
+    width: 85%;
+}
+
+.hero-right-txt {
+    font-size: 0.6vw;
+}
+
+/* ------------------------------------- Hero Part ---------------------------------- */
+
+/* ------------------------------------- Category Part ---------------------------------- */
+
+.category-cont {
+    margin: 8vw 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.category-head p {
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+.category-body {
+    margin-top: 2vw;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 420px;
+}
+
+.category-parts {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.category-txt-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 25%;
+    background-color: var(--light-gray);
+}
+
+.category-txt-cont p {
+    font-family: sequalSans;
+    font-size: 2.4vw;
+    text-align: center;
+    background: linear-gradient(to top, #b8c2ce, #262626);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------- Category Part ---------------------------------- */
+
+/* ------------------------------------- News Part ---------------------------------- */
+
+.trending-news-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    background-color: var(--light-gray);
+    border-radius: 0.4vw;
+    margin: 5vw 0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5vw;
+    height: 90%;
+    width: 90%;
+}
+
+.news {
+    display: flex;
+    gap: 0.6vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-right {
+    align-content: center;
+    height: 100%;
+}
+
+.top-border {
+    border-top: 2px solid var(--dark-gray);
+}
+
+.news-txt-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+
+.news-date {
+    font-size: 0.7vw;
+}
+
+.news-head {
+    font-size: 1.2vw;
+}
+
+.news-desc {
+    font-size: 0.8vw;
+}
+
+.trending-right {
+    height: 570px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(images/sportsman-drinking-water-training-stationary-bike\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5vw;
+}
+
+.trending-right-txt-cont {
+    padding: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending-right-txt-cont button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 0.3vw;
+    color: white;
+    padding: 0.4vw 1vw;
+    font-size: 1vw;
+}
+
+.trending-right-date {
+    color: var(--main-white);
+    font-size: 1vw;
+}
+
+.trending-right-head {
+    color: white;
+    font-size: 2.2vw;
+    font-family: sequalSans;
+}
